@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<Button
+    android:id="@+id/button_goback"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:text="back"/>
+    <Button
+        android:id="@+id/button_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Select"/>
+
+    <com.example.cameraalbumtest.ZoomImageView
+    android:id="@+id/zoomImageView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_below="@id/button_goback"
+        android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="#FFFFFF"
+    />
+    <com.example.cameraalbumtest.MaskView
+        android:id="@+id/maskView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_goback"
+        android:layout_alignParentBottom="true"
+        android:background="#e0000000"
+        android:alpha="0.6"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>
